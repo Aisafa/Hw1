@@ -24,5 +24,15 @@ public class MainClassTest {
         assert actual > 45 : "\nSorry! " + actual + " no more than " + 45;
     }
 
+    @Test
+    public void testGetClassString() {
+        MainClass text = new MainClass();
+
+        String actual = text.getClassString();
+
+        assert actual.contains("Hello") : "\n " + actual + " is not contains Hello";
+        assert actual.contains("hello") : "\n '" + actual + "' is not contains 'hello'";
+    }
+
 }
 
